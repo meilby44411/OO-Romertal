@@ -13,6 +13,7 @@ public class Romertal {
 		int antal_X = 0;
 		int antal_L = 0;
 		int antal_C = 0;
+		int antal_D = 0;
 
 		for (char c : a1) {
 			if (c == 'I')
@@ -23,6 +24,9 @@ public class Romertal {
 				antal_X++;
 			else if (c == 'L')
 				antal_L++;
+			else if (c == 'C')
+				antal_C++;
+
 		}
 
 		while (antal_I >= 5) {
@@ -44,11 +48,19 @@ public class Romertal {
 			antal_C++;
 			antal_L -= 2;
 		}
+
+		while (antal_C >= 5) {
+			antal_D++;
+			antal_C -= 5;
+		}
+
+		for (int i = 0; i < antal_D; i++) {
+			nyString += "D";
+		}
 		
 		for (int i = 0; i < antal_C; i++) {
 			nyString += "C";
 		}
-
 
 		for (int i = 0; i < antal_L; i++) {
 			nyString += "L";

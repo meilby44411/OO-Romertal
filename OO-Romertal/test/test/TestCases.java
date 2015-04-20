@@ -41,8 +41,7 @@ public class TestCases {
 	}
 	
 	@Test 
-	public void testCLXXXXVIIIIplusCLXXXVIIIequalsDCLXXXVII(){
-	
-		assertEquals(romertal.calculate("CLXXXXVIIII", "CLXXXVIII"), "DCLXXXVII")
+	public void testCCCLXXXXVIIIIplusCCLXXXVIIIequalsDCLXXXVII(){	
+		assertEquals(romertal.calculate("CCCLXXXXVIIII", "CCLXXXVIII"), "DCLXXXVII");
 	}
 }
