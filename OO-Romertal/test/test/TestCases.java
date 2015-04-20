@@ -20,4 +20,8 @@ public class TestCases {
 		assertEquals(romertal.calculate("I", "II"), "III");
 	}
 
+	@Test
+	public void testIIIplusIIIequalsVI(){
+		assertEquals(romertal.calculate("III", "III"), "VI");
+	}
 }
