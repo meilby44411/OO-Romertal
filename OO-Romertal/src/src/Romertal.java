@@ -32,7 +32,6 @@ public class Romertal {
 			else if (c == 'M')
 				antal_M++;
 
-
 		}
 
 		while (antal_I >= 5) {
@@ -59,45 +58,46 @@ public class Romertal {
 			antal_D++;
 			antal_C -= 5;
 		}
-		
+
 		while (antal_D >= 2) {
 			antal_M++;
 			antal_D -= 2;
 		}
-		
-		
 
-		for (int i = 0; i < antal_M; i++) {
-			nyString += "M";
+		if (antal_M > 4)
+			return "UGYLDIG";
+
+		else {
+			for (int i = 0; i < antal_M; i++) {
+				nyString += "M";
+			}
+
+			for (int i = 0; i < antal_D; i++) {
+				nyString += "D";
+			}
+
+			for (int i = 0; i < antal_C; i++) {
+				nyString += "C";
+			}
+
+			for (int i = 0; i < antal_L; i++) {
+				nyString += "L";
+			}
+
+			for (int i = 0; i < antal_X; i++) {
+				nyString += "X";
+
+			}
+
+			for (int i = 0; i < antal_V; i++) {
+				nyString += "V";
+			}
+
+			for (int i = 0; i < antal_I; i++) {
+				nyString += "I";
+			}
+
+			return nyString;
 		}
-
-
-		for (int i = 0; i < antal_D; i++) {
-			nyString += "D";
-		}
-		
-		for (int i = 0; i < antal_C; i++) {
-			nyString += "C";
-		}
-
-		for (int i = 0; i < antal_L; i++) {
-			nyString += "L";
-		}
-
-		for (int i = 0; i < antal_X; i++) {
-			nyString += "X";
-
-		}
-
-		for (int i = 0; i < antal_V; i++) {
-			nyString += "V";
-		}
-
-		for (int i = 0; i < antal_I; i++) {
-			nyString += "I";
-		}
-
-		return nyString;
 	}
-
 }
