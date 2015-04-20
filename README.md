@@ -1,1 +1,39 @@
 # OO-Romertal
+tests
+
+input			      	output
+
+I				        	III
+II
+
+
+III				      	VI
+III
+
+
+V					        XI
+VI
+
+
+XXX				  	    LX
+XXX
+
+
+LX					      CX
+XXXXX
+
+
+CCCLXXXXVIIII		  DCLXXXVII
+CCLXXXVIII
+
+
+DCLXVII				    MCCCLV
+DCLXXXVIII
+
+
+MMDXXXXV			    MMMMDCCCCLXXXXVIIII
+MMCCCCLIIII
+
+
+MMDXXXXV			    MMMMDCCCCLXXXXVIIII
+MMCCCCLIIIII
