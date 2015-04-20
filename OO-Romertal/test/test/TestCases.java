@@ -55,4 +55,12 @@ public class TestCases {
 		assertEquals(romertal.calculate("MCCXVII", "DCCCCLXI"), "MMCLXXVIII");
 	}
 	
+	@Test 
+	public void testMMDXXXXVplusMMCCCCLIIIIequalsMMMMDCCCCLXXXXVIIII(){	
+		assertEquals(romertal.calculate("MMDXXXXV", "MMCCCCLIIII"), "MMMMDCCCCLXXXXVIIII");
+	}
+	
+	
+
+	
 }
